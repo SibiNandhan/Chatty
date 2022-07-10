@@ -16,7 +16,7 @@ io.on("connection", (socket) => {
     io.emit("chat", payload);
   });
 });
-const PORT = 4000;
+let PORT = 4000;
 
 server.listen(PORT, () => {
   console.log(`server is listening ${PORT}`);
